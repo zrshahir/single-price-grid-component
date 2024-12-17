@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-weight: 400; 
+      font-size: 16px; 
+    }
+    .top-card {
+      background-color: white;
+      z-index: 3; 
+      position: relative; 
+      left: 204px; 
+    }
+    h1 {
+      color: hsl(179, 62%, 43%);  
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+    } 
+    h2 {
+      color: hsl(71, 73%, 54%); 
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+    } 
+    p {
+      color: gray; 
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+    }
+    h3, h4, h5, li {
+      color: white; 
+      font-size: 16px; 
+      font-weight: 400;
+    }
+    .lower-left-card {
+      background-color: hsl(179, 62%, 43%);
+      height: 350px;
+      float: left; 
+      width: 832px;
+      font-size: 16px; 
+      z-index: 2; 
+      position: relative; 
+      left: 209px; 
+    }
+    .lower-right-card {
+      background-color: turquoise;
+      height: 350px; 
+      float: right;
+      width: 832px;
+      font-size: 16px; 
+      z-index: 1; 
+      position: relative; 
+      right: 624px; 
+      top: 342px; 
+    }
+    .button-container {
+      position: relative; 
+      margin-bottom: 20px; 
+      font-size: 16px; 
+      padding-right: 216px;
+    }
+    .sign-up-button {
+      background-color: hsl(71, 73%, 54%);
+      position: absolute; 
+      top: -24px; 
+      height: 55px; 
+      width: 266px; 
+      color: rgba(234, 240, 246, 0.8); 
+      padding: 24px;
+      margin-right: 66px; 
+      margin-bottom: 24px;
+      font-size: 16px;
+      padding-left: 10px;
+      text-align: center;
+      margin-top: 24px;
+    }
+    h6 {
+      color: turquoise; 
+      font-size: 16px; 
+    }
+    @media only screen and (max-width: 600px) {
+      body {
+      font-weight: 400; 
+      font-size: 16px; 
+      }
+      .top-card {
+      background-color: white;
+      }
+      h1 {
+      color: hsl(179, 62%, 43%);  
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+      } 
+      h2 {
+      color: hsl(71, 73%, 54%); 
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+      } 
+      p {
+      color: gray; 
+      font-size: 16px; 
+      text-align: left; 
+      padding-left: 24px; 
+      font-weight: 700; 
+      }
+      h3, h4, h5, li {
+      color: white; 
+      font-size: 16px; 
+      font-weight: 400;
+      }
+      .lower-left-card {
+      background-color: hsl(179, 62%, 43%);
+      height: 350px;
+      float: left; 
+      width: 832px;
+      font-size: 16px; 
+      }
+      .lower-right-card {
+      background-color: turquoise;
+      height: 350px; 
+      float: right;
+      width: 832px;
+      font-size: 16px;  
+      }
+      .button-container {
+      position: relative; 
+      margin-bottom: 20px; 
+      font-size: 16px; 
+      padding-right: 216px;
+      }
+      .sign-up-button {
+      background-color: hsl(71, 73%, 54%);
+      position: absolute; 
+      top: -24px; 
+      height: 55px; 
+      width: 266px; 
+      color: rgba(234, 240, 246, 0.8); 
+      padding: 24px;
+      margin-right: 66px; 
+      margin-bottom: 24px;
+      font-size: 16px;
+      padding-left: 10px;
+      text-align: center;
+      margin-top: 24px;
+      }
+      h6 {
+      color: turquoise; 
+      font-size: 16px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="attribution a">
+  <div class="top-card">
+  <h1>Join our community</h1>
+
+  <h2>30-day, hassle-free money back guarantee</h2>
+
+  <p>Gain access to our full library of tutorials along with expert code reviews.</p> 
+  <p>Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+  <div class="lower-left-card">
+  <h3>Monthly Subscription</h3>
+
+  <h4>&dollar;29</h4><h6>per month</h6>
+
+  <h5>Full access for less than &dollar;1 a day</h5>
+  <div class="button-container">
+  <button class="sign-up-button">Sign Up</button>
+  </div>
+  </div>
+  <div class="lower-right-card">
+  <h3>Why Us</h3>
+  <ul>
+  <li>Tutorials by industry experts</li>
+  <li>Peer &amp; expert code review</li>
+  <li>Coding exercises</li>
+  <li>Access to our GitHub repos</li>
+  <li>Community forum</li>
+  <li>Flashcard decks</li>
+  <li>New videos every week</li>
+  </ul>
+  </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Zahira Shahir</a>.
+    </p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
